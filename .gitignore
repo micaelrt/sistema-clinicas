@@ -1,0 +1,14 @@
+# Enunciado (fica só local)
+Atendimento Cl*nicas*.pdf
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Editores e sistema
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
