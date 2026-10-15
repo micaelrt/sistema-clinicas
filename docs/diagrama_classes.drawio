@@ -71,7 +71,7 @@
           <mxGeometry x="0" y="74" width="225" height="20" as="geometry" />
         </mxCell>
         <mxCell id="cls23" value="Clinica" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="240" y="522" width="456" height="234" as="geometry" />
+          <mxGeometry x="240" y="522" width="456" height="254.0" as="geometry" />
         </mxCell>
         <mxCell id="m24" value="- nome: str" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontStyle=0;" vertex="1" parent="cls23">
           <mxGeometry x="0" y="26" width="456" height="20" as="geometry" />
@@ -106,7 +106,7 @@
         <mxCell id="m34" value="+ esta_aberta(inicio: time, fim: time): bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontStyle=0;" vertex="1" parent="cls23">
           <mxGeometry x="0" y="214" width="456" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="cls35" value="TipoAtendimento" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxCell id="cls23_novo0" value="+ alterar_horario(hora_abertura: time, hora_fechamento: time)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontStyle=0;" vertex="1" parent="cls23"><mxGeometry y="234.0" width="456" height="20.0" as="geometry" /></mxCell><mxCell id="cls35" value="TipoAtendimento" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="60" y="522" width="140" height="94" as="geometry" />
         </mxCell>
         <mxCell id="m36" value="- nome: str" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontStyle=0;" vertex="1" parent="cls35">
@@ -122,7 +122,7 @@
           <mxGeometry x="0" y="74" width="140" height="20" as="geometry" />
         </mxCell>
         <mxCell id="cls40" value="Atendimento" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="736" y="522" width="736" height="394" as="geometry" />
+          <mxGeometry x="736" y="522" width="736" height="454.0" as="geometry" />
         </mxCell>
         <mxCell id="m41" value="- codigo: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontStyle=0;" vertex="1" parent="cls40">
           <mxGeometry x="0" y="26" width="736" height="20" as="geometry" />
@@ -181,7 +181,7 @@
         <mxCell id="m59" value="+ valor_restante(): float" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontStyle=0;" vertex="1" parent="cls40">
           <mxGeometry x="0" y="374" width="736" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="cls60" value="Procedimento" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxCell id="cls40_novo0" value="+ alterar_dados(clinica, paciente, profissional, tipo, data, hora_inicio, hora_fim, valor)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontStyle=0;" vertex="1" parent="cls40"><mxGeometry y="394.0" width="736" height="20.0" as="geometry" /></mxCell><mxCell id="cls40_novo1" value="+ alterar_procedimento(procedimento: Procedimento, descricao: str, custo: float, profissional: ProfissionalSaude)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontStyle=0;" vertex="1" parent="cls40"><mxGeometry y="414.0" width="736" height="20.0" as="geometry" /></mxCell><mxCell id="cls40_novo2" value="+ alterar_pagamento(pagamento: Pagamento, data: date, valor_pago: float)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontStyle=0;" vertex="1" parent="cls40"><mxGeometry y="434.0" width="736" height="20.0" as="geometry" /></mxCell><mxCell id="cls60" value="Procedimento" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="1512" y="522" width="261" height="114" as="geometry" />
         </mxCell>
         <mxCell id="m61" value="- descricao: str" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontStyle=0;" vertex="1" parent="cls60">
@@ -284,7 +284,7 @@
           <mxGeometry x="1993" y="442" width="189" height="26" as="geometry" />
         </mxCell>
         <mxCell id="cls94" value="«abstract»&lt;br&gt;&lt;i&gt;TelaAbstrata&lt;/i&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="1128" y="1860" width="477" height="188" as="geometry" />
+          <mxGeometry x="1128" y="1920.0" width="477" height="228.0" as="geometry" />
         </mxCell>
         <mxCell id="m95" value="" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontStyle=0;" vertex="1" parent="cls94">
           <mxGeometry x="0" y="40" width="477" height="20" as="geometry" />
@@ -310,23 +310,23 @@
         <mxCell id="m102" value="+ mostra_mensagem(mensagem: str)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontStyle=0;" vertex="1" parent="cls94">
           <mxGeometry x="0" y="168" width="477" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="cls103" value="TelaSistema" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="156" y="1860" width="140" height="26" as="geometry" />
+        <mxCell id="cls94_novo0" value="+ le_texto(mensagem: str, obrigatorio: bool): str" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontStyle=0;" vertex="1" parent="cls94"><mxGeometry y="188.0" width="477" height="20.0" as="geometry" /></mxCell><mxCell id="cls94_novo1" value="+ le_cpf(mensagem: str): str" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontStyle=0;" vertex="1" parent="cls94"><mxGeometry y="208.0" width="477" height="20.0" as="geometry" /></mxCell><mxCell id="cls103" value="TelaSistema" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="156" y="1880.0" width="140" height="26" as="geometry" />
         </mxCell>
         <mxCell id="cls104" value="TelaPaciente" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="156" y="1694" width="140" height="26" as="geometry" />
+          <mxGeometry x="156" y="1714.0" width="140" height="26" as="geometry" />
         </mxCell>
         <mxCell id="cls105" value="TelaProfissional" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="576" y="1694" width="140" height="26" as="geometry" />
+          <mxGeometry x="576" y="1714.0" width="140" height="26" as="geometry" />
         </mxCell>
         <mxCell id="cls106" value="TelaClinica" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="996" y="1694" width="140" height="26" as="geometry" />
+          <mxGeometry x="996" y="1754.0" width="140" height="26" as="geometry" />
         </mxCell>
         <mxCell id="cls107" value="TelaTipoAtendimento" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="1378" y="1694" width="160" height="26" as="geometry" />
+          <mxGeometry x="1378" y="1754.0" width="160" height="26" as="geometry" />
         </mxCell>
         <mxCell id="cls108" value="TelaAtendimento" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="1822" y="1694" width="140" height="26" as="geometry" />
+          <mxGeometry x="1822" y="1714.0" width="140" height="26" as="geometry" />
         </mxCell>
         <mxCell id="cls109" value="TelaPagamento" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="2160" y="1694" width="140" height="26" as="geometry" />
@@ -335,7 +335,7 @@
           <mxGeometry x="2436" y="1694" width="140" height="26" as="geometry" />
         </mxCell>
         <mxCell id="cls111" value="ControladorSistema" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="1266" y="1096" width="182" height="114" as="geometry" />
+          <mxGeometry x="1266" y="1156.0" width="182" height="114" as="geometry" />
         </mxCell>
         <mxCell id="m112" value="" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontStyle=0;" vertex="1" parent="cls111">
           <mxGeometry x="0" y="26" width="182" height="20" as="geometry" />
@@ -353,7 +353,7 @@
           <mxGeometry x="0" y="94" width="182" height="20" as="geometry" />
         </mxCell>
         <mxCell id="cls117" value="ControladorPacientes" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="60" y="1280" width="333" height="174" as="geometry" />
+          <mxGeometry x="60" y="1300.0" width="333" height="174" as="geometry" />
         </mxCell>
         <mxCell id="m118" value="- pacientes: list[Paciente]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontStyle=0;" vertex="1" parent="cls117">
           <mxGeometry x="0" y="26" width="333" height="20" as="geometry" />
@@ -380,7 +380,7 @@
           <mxGeometry x="0" y="154" width="333" height="20" as="geometry" />
         </mxCell>
         <mxCell id="cls126" value="ControladorProfissionais" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="433" y="1280" width="427" height="174" as="geometry" />
+          <mxGeometry x="433" y="1360.0" width="427" height="174" as="geometry" />
         </mxCell>
         <mxCell id="m127" value="- profissionais: list[ProfissionalSaude]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontStyle=0;" vertex="1" parent="cls126">
           <mxGeometry x="0" y="26" width="427" height="20" as="geometry" />
@@ -407,7 +407,7 @@
           <mxGeometry x="0" y="154" width="427" height="20" as="geometry" />
         </mxCell>
         <mxCell id="cls135" value="ControladorClinicas" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="900" y="1280" width="333" height="214" as="geometry" />
+          <mxGeometry x="900" y="1340.0" width="333" height="214" as="geometry" />
         </mxCell>
         <mxCell id="m136" value="- clinicas: list[Clinica]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontStyle=0;" vertex="1" parent="cls135">
           <mxGeometry x="0" y="26" width="333" height="20" as="geometry" />
@@ -440,7 +440,7 @@
           <mxGeometry x="0" y="194" width="333" height="20" as="geometry" />
         </mxCell>
         <mxCell id="cls146" value="ControladorTiposAtendimento" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="1273" y="1280" width="369" height="174" as="geometry" />
+          <mxGeometry x="1273" y="1340.0" width="369" height="174" as="geometry" />
         </mxCell>
         <mxCell id="m147" value="- tipos: list[TipoAtendimento]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontStyle=0;" vertex="1" parent="cls146">
           <mxGeometry x="0" y="26" width="369" height="20" as="geometry" />
@@ -467,7 +467,7 @@
           <mxGeometry x="0" y="154" width="369" height="20" as="geometry" />
         </mxCell>
         <mxCell id="cls155" value="ControladorAtendimentos" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="1682" y="1280" width="420" height="254" as="geometry" />
+          <mxGeometry x="1682" y="1280" width="420" height="274.0" as="geometry" />
         </mxCell>
         <mxCell id="m156" value="- atendimentos: list[Atendimento]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontStyle=0;" vertex="1" parent="cls155">
           <mxGeometry x="0" y="26" width="420" height="20" as="geometry" />
@@ -505,7 +505,7 @@
         <mxCell id="m167" value="+ abre_tela()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontStyle=0;" vertex="1" parent="cls155">
           <mxGeometry x="0" y="234" width="420" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="cls168" value="ControladorPagamentos" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxCell id="cls155_novo0" value="+ possui_referencia(objeto): bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontStyle=0;" vertex="1" parent="cls155"><mxGeometry y="254.0" width="420" height="20.0" as="geometry" /></mxCell><mxCell id="cls168" value="ControladorPagamentos" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="2142" y="1280" width="175" height="154" as="geometry" />
         </mxCell>
         <mxCell id="m169" value="" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontStyle=0;" vertex="1" parent="cls168">
